@@ -1,0 +1,293 @@
+XH
+H 3 areas 27 global symbols
+M led7seg_1.asm
+S Port_0_Data_SHADE Ref0000
+A text size 0 flags 0
+dbfile lib/led7seg_1.asm
+dbfunc 0 ? 0 I
+dbfile memory.inc
+dbfunc 0 ? 0 I
+dbfile lib/led7seg_1.asm
+dbfunc 0 ? 0 I
+dbfile LED7SEG_1.inc
+dbfunc 0 ? 0 I
+dbfile C:/PROGRA~1/CYPRES~1/PSOCDE~1/tools/include/CY8C24~2/m8c.inc
+dbfunc 0 ? 0 I
+dbfile ./lib/LED7SEG_1.inc
+dbfunc 0 ? 0 I
+A InterruptRAM size 9 flags 20
+S _LED7SEG_1_DigitRAM Def0001
+S _LED7SEG_1_ScanStatus Def0000
+S LED7SEG_1_DigitRAM Def0001
+S LED7SEG_1_ScanStatus Def0000
+A UserModules size 18C flags 0
+dbfile lib/led7seg_1.asm
+dbfunc 0 ? 23 I
+dbline A7 23
+dbline A9 25
+dbline AA 28
+dbline AB 2B
+dbline AD 2C
+dbline AF 2E
+dbline B0 31
+dbline B1 32
+dbline B4 34
+dbline B7 37
+dbline B8 39
+dbline B9 3C
+dbline BA 3F
+dbline BB 41
+dbline BD 44
+dbline C0 45
+dbline C1 48
+dbline C5 4D
+dbline C6 4F
+dbline DF 50
+dbline E1 53
+dbline E3 54
+dbline E7 57
+dbline EB 5A
+dbline EC 5C
+dbline ED 5E
+dbline F0 5F
+dbline F1 62
+dbline F5 65
+dbline 110 66
+dbline 112 69
+dbline 113 6B
+dbline 116 6D
+dbline 118 70
+dbline 11B 71
+dbline 11D 74
+dbline 146 75
+dbline 148 77
+dbline 149 78
+dbline 14B 7B
+dbline 14C 7E
+dbline 14F 7F
+dbline 150 82
+dbline 152 85
+dbline 153 88
+dbline 157 8A
+dbline 15B 8D
+dbline 15C 8F
+dbline 15F 91
+dbline 160 93
+dbline 161 95
+dbline 164 96
+dbline 165 99
+dbline 167 9B
+dbline 16F 9D
+dbline 173 9F
+dbline 174 A0
+dbline 177 A2
+dbline 17B A4
+dbline 17C A6
+dbline 181 A8
+dbline 182 A9
+dbline 183 AA
+dbline 184 AC
+dbline 185 AE
+dbline 186 B0
+dbline 187 B2
+dbline 18A B4
+dbline 18B B7
+dbline 18C BA
+dbline 18D BC
+dbline 18E BF
+dbline 191 C1
+dbline 195 C5
+dbline 196 C8
+dbline 199 CA
+dbline 19A CB
+dbline 19D CE
+dbline 19F D0
+dbline 1B7 D1
+dbline 1B8 D3
+dbline 1BA D6
+dbline 1BB D8
+dbline 1BC D9
+dbline 1BD DA
+dbline 1BE DC
+dbline 1C0 DE
+dbline 1C1 DF
+dbline 1C2 E2
+dbline 1C4 E6
+dbline 1C5 E8
+dbline 1DD E9
+dbline 1DE EB
+dbline 1E0 EE
+dbline 1E1 EF
+dbline 1E2 F0
+dbline 1E3 F2
+dbline 1E5 F4
+dbline 1E6 F5
+dbline 1E8 F9
+dbline 1E9 FB
+dbline 201 FC
+dbline 202 FE
+dbline 203 101
+dbline 204 102
+dbline 205 103
+dbline 206 105
+dbline 208 107
+dbline 209 108
+dbline 20A 10A
+dbline 20C 10C
+dbline 20D 10F
+dbline 20F 111
+dbline 212 116
+dbline 213 118
+dbline 239 11B
+dbline 23B 11D
+dbline 23C 11E
+dbline 23F 120
+dbline 240 122
+dbline 241 124
+dbline 242 126
+dbline 244 128
+dbline 249 12B
+dbline 24C 12E
+dbline 24D 130
+dbline 24E 131
+dbline 24F 133
+dbline 250 135
+dbline 251 137
+dbline 254 139
+dbline 255 13B
+dbline 256 13C
+dbline 257 13D
+dbline 258 13F
+dbline 259 141
+dbline 25A 143
+dbline 25D 145
+dbline 25F 147
+dbline 260 149
+dbline 261 14A
+dbline 262 14C
+dbline 264 14E
+dbline 265 150
+dbline 266 151
+dbline 267 152
+dbline 268 154
+dbline 269 156
+dbline 26A 158
+dbline 26B 15A
+dbline 26F 15C
+dbline 270 15E
+dbline 271 160
+dbline 275 162
+dbline 276 164
+dbline 277 165
+dbline 279 167
+dbline 27A 169
+dbline 27B 16D
+dbline 27C 16F
+dbline 27D 170
+dbline 280 172
+dbline 281 175
+dbline 282 177
+dbline 284 179
+dbline 285 17B
+dbline 287 17D
+dbline 288 17F
+dbline 289 183
+dbline 28C 185
+dbline 28D 189
+dbline 28E 18B
+S $sb$_LED7SEG_1_DispInt Def0119
+S $se$_LED7SEG_1_DispInt Def018C
+S LED7SEG_1_PutHex Def00D1
+S LED7SEG_1_Update Def0075
+S _LED7SEG_1_Start Def0023
+S _LED7SEG_1_PutPattern Def00E9
+S _LED7SEG_1_Dim Def0066
+S $sb$_LED7SEG_1_Start Def0023
+S $se$_LED7SEG_1_Start Def0050
+S $sb$_LED7SEG_1_PutPattern Def00E9
+S LED7SEG_1_DP Def00FC
+S $se$_LED7SEG_1_PutPattern Def00FC
+S $sb$_LED7SEG_1_Dim Def0066
+S $se$_LED7SEG_1_Dim Def0075
+S LED7SEG_1_Stop Def0050
+S LED7SEG_1_DispInt Def0119
+S _LED7SEG_1_PutHex Def00D1
+S _LED7SEG_1_Update Def0075
+S $sb$_LED7SEG_1_PutHex Def00D1
+S $se$_LED7SEG_1_PutHex Def00E9
+S $sb$_LED7SEG_1_Update Def0075
+S $se$_LED7SEG_1_Update Def00D1
+S $lb$LED7SEG_1_HexSegMask Def0000
+S $le$LED7SEG_1_HexSegMask Def0023
+S _LED7SEG_1_DP Def00FC
+S _LED7SEG_1_Stop Def0050
+S LED7SEG_1_Start Def0023
+S $sb$_LED7SEG_1_DP Def00FC
+S $se$_LED7SEG_1_DP Def0119
+S LED7SEG_1_PutPattern Def00E9
+S _LED7SEG_1_DispInt Def0119
+S LED7SEG_1_Dim Def0066
+S $sb$_LED7SEG_1_Stop Def0050
+S $se$_LED7SEG_1_Stop Def0066
+T 00 00 3F 06 5B 4F 66 6D 7D 07 7F 6F 77 7C 39 5E
+R 00 00 00 02
+T 00 0E 79 71 40 01 02 04 08 10 20 40 80 00 01
+R 00 00 00 02
+T 00 1B 00 0A 00 64 03 E8 27 10 70 BF 62 D3 00 00
+R 00 00 00 02 49 0E 00 01
+T 00 28 62 D0 00 00 10 57 07 56 00 01 00 79 DF FB
+R 00 00 00 02 49 04 00 01 09 0A 00 01
+T 00 34 55 00 00 80 71 10 43 00 FF 41 01 00 70 EF
+R 00 00 00 02 09 03 00 01
+T 00 41 41 03 00 20 43 2B 01 43 E1 04 70 3F 71 C0
+R 00 00 00 02
+T 00 4F 7F 62 D0 00 00 08 55 00 00 00 26 00 00 00
+R 00 00 00 02 49 05 00 01 09 09 00 01 0B 0D 00 00
+T 00 5A 51 00 00 60 00 18 41 E1 FB 41 2B FE 7F 62
+R 00 00 00 02 0B 03 00 00
+T 00 67 D0 00 00 21 01 A0 05 2E 00 00 40 7F 26
+R 00 00 00 02 49 03 00 01 09 0A 00 01
+T 00 72 00 00 BF 7F 70 BF 08 10 5D D3 08 5D D0 08
+R 00 00 00 02 09 02 00 01
+T 00 7F 62 D3 00 00 62 D0 00 00 47 00 00 80 A0 3B
+R 00 00 00 02 49 04 00 01 49 08 00 01 09 0B 00 01
+T 00 8A 26 00 00 00 51 00 00 60 00 51 00 00 21 0F
+R 00 00 00 02 0B 03 00 00 0B 07 00 00 09 0C 00 01
+T 00 95 4B 47 00 00 20 B0 0E 52 00 01 60 14 5B FF
+R 00 00 00 02 09 04 00 01 09 0A 00 01
+T 00 A1 6F 2C 00 00 51 00 00 60 00 4B 74 76 00 00
+R 00 00 00 02 0B 04 00 00 0B 07 00 00 09 0E 00 01
+T 00 AC 11 08 A0 05 D0 03 80 11 26 00 00 F0 47
+R 00 00 00 02 09 0B 00 01
+T 00 B8 00 00 40 A0 06 36 00 00 20 80 04 26 00 00
+R 00 00 00 02 09 02 00 01 09 08 00 01 09 0E 00 01
+T 00 C3 DF 18 60 D0 18 60 D3 20 18 70 3F 71 C0 7F
+R 00 00 00 02
+T 00 D1 70 BF 62 D3 00 00 FF 28 79 4B 39 08 D0 07
+R 00 00 00 02 49 06 00 01
+T 00 DE 4B 27 00 01 80 2D 00 01 70 3F 71 C0 7F 70
+R 00 00 00 02 09 04 00 01 09 08 00 01
+T 00 EA BF 62 D3 00 00 79 4B 39 08 D0 04 4B 54
+R 00 00 00 02 49 05 00 01
+T 00 F6 00 01 70 3F 71 C0 7F 70 BF 62 D3 00 00 79
+R 00 00 00 02 09 02 00 01 49 0D 00 01
+T 01 02 4B 39 08 D0 0E 4B 39 00 A0 06 2F 00 01 80
+R 00 00 00 02 09 0D 00 01
+T 01 0F 80 04 27 00 01 7F 70 3F 71 C0 7F 70 3F 71
+R 00 00 00 02 09 05 00 01
+T 01 1C C0 4F 38 03 52 FC 52 FD 52 FB 7B FA 56 00
+R 00 00 00 02
+T 01 2A 04 56 01 00 52 00 64 FE E6 3B FC C0 0F B0
+R 00 00 00 02
+T 01 38 24 52 00 64 74 FE DA 3B FD C0 03 B0 18 77
+R 00 00 00 02
+T 01 46 01 52 00 64 FE CD 54 02 52 00 64 74 FE C5
+R 00 00 00 02
+T 01 54 15 FD 52 02 1D FC 8F D3 52 FA 3B 00 C0 11
+R 00 00 00 02
+T 01 62 52 01 10 59 FB 71 C0 9F 66 70 3F 71 C0 20
+R 00 00 00 02
+T 01 70 77 FB 56 01 00 7B 00 BF B6 52 FD 59 FB 71
+R 00 00 00 02
+T 01 7E C0 9F 50 70 3F 71 C0 38 FD 70 3F 71 C0 7F
+R 00 00 00 02

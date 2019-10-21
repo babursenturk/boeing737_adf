@@ -1,0 +1,13 @@
+# DO NOT DELETE
+./obj/boot.o :  C:/PROGRA~1/CYPRES~1/PSOCDE~1/tools/include/CY8C24~2/m8c.inc\
+   C:/PROGRA~1/CYPRES~1/PSOCDE~1/tools/include/CY8C24~2/m8ssc.inc\
+   C:\Babur\PsocDes\RADYO_~1\RA572D~1\lib\GLOBAL~1.INC\
+   C:\Babur\PsocDes\RADYO_~1\RA572D~1\memory.inc
+./obj/main.o :  ./lib/ADCINC~1.H ./lib/AMUX8_1.h ./lib/COUNTE~1.H\
+   ./lib/I2CHW_~1.H ./lib/I2CHW_~2.H ./lib/LED7SE~1.H ./lib/PGA_1.h\
+   ./lib/PSoCAPI.h C:/PROGRA~1/CYPRES~1/PSOCDE~1/tools/include/CY8C24~2/M8C.h\
+   C:/PROGRA~1/CYPRES~1/PSOCDE~1/tools/include/CY8C24~2/m8c.h\
+   C:/PROGRA~1/CYPRES~1/PSOCDE~1/tools/include/_const.h\
+   C:/PROGRA~1/CYPRES~1/PSOCDE~1/tools/include/limits.h\
+   C:/PROGRA~1/CYPRES~1/PSOCDE~1/tools/include/stdlib.h\
+   C:\Babur\PsocDes\RADYO_~1\RA572D~1\hbheader.h
